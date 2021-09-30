@@ -212,31 +212,6 @@ export default function App() {
     }
   ];
 
-  function showMytholoyList() {
-    mytholoyDictionary.map((bookDetails) => {
-      return (
-        <div>
-          {/* <h2>{console.log("hi")}</h2> */}
-          <h3>{bookDetails.name}</h3>
-          <h3>{bookDetails.author}</h3>
-          <h3>{bookDetails.ratings}</h3>
-        </div>
-      );
-      // console.log(mytholoyList);
-      // return setMythologyList(item);
-    });
-  }
-
-  function clickHandler() {
-    return (
-      <ul className="list-non-bullet">
-        <li className="list-item-inline">Javascript</li>
-        <li className="list-item-inline">Python</li>
-        <li className="list-item-inline">Java</li>
-      </ul>
-    );
-  }
-
   return (
     <div className="App">
       <h1>Pustak Bhawan</h1>
@@ -249,7 +224,6 @@ export default function App() {
         onClick={() => {
           setBookList(mytholoyDictionary);
         }}
-        // key={book}
         className="list-item-inline"
       >
         Mythology
@@ -264,20 +238,6 @@ export default function App() {
         History
       </button>
 
-      {/* <button
-        onClick={() => {
-          return (
-            <ul className="list-non-bullet">
-              <li className="list-item-inline">Javascript</li>
-              <li className="list-item-inline">Python</li>
-              <li className="list-item-inline">Java</li>
-            </ul>
-          );
-        }}
-        className="list-item-inline"
-      >
-        Technology
-      </button> */}
       <button
         onClick={() => {
           setBookList(technologyDictionary);
